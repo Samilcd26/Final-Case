@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    
+    th {@apply border-b-[2px] border-[#35B0EA] px-12 py-2  }
+    td {@apply border-b-[1px] px-12 py-2  }
+    input {@apply border-b-[1px] border-y-green-500 outline-none focus:border-b-[2px] text-center}
+
+    .title{@apply font-bold mt-10 text-lg underline decoration-double underline-offset-2}
+    .okButton {@apply bg-green-200 text-center rounded-full py-2 text-green-500 font-bold hover:text-green-200 hover:bg-green-500}
+    .noButton {@apply bg-red-200 text-center rounded-full py-2 text-red-500 font-bold hover:text-red-200 hover:bg-red-500 }
+    .cBox {@apply border-[1px] border-blue-600 py-2 px-5 w-32 rounded-full focus:outline-none focus:border-sky-500 focus:ring-sky-500}
+
+    .activeBtn{@apply bg-sky-500 text-white w-32 py-3 rounded-full }
+    .disableBtn{@apply border-b-2 w-32 py-3 rounded-full }
+}
